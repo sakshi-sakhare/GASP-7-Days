@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box{
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    animation: move 5s infinite;
+    margin: 50px;
+}
+@keyframes move{
+    0%{
+        background-color: red;
+        border-radius: 20%;
+    }
+    50%{
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    100%{
+        background-color: green;
+        border-radius: 100%;
+    }
+}

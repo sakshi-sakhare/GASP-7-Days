@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    height: 500px;
+    width: 500px;
+    border: 30px gray solid;
+    border-radius: 50%;
+    border-top: 30px solid red;
+    border-left:30px solid yellow;
+    border-right:30px solid green;
+    border-bottom: 30px solid blue;
+    animation: loader 4s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
